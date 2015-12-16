@@ -1,0 +1,9 @@
+box: jpetazzo/dind
+build:
+  steps:
+    - script:
+        name: print the docker version
+        code: docker version
+    - script:
+        name: print system-wide docker info
+        code: docker info
